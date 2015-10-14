@@ -1,0 +1,57 @@
+h2 a {
+  font-weight: bold;
+}
+
+#name-and-slogan #site-slogan {
+  font-family: 'Comic Sans MS',Cursive;
+  font-style: normal;
+  text-align: center;
+  background-color: #f79400;
+  border-top-style: dotted;
+  border-right-style: dotted;
+  border-bottom-style: dotted;
+  border-left-style: dotted;
+  border-top-color: #3ffa00;
+  border-right-color: #3ffa00;
+  border-bottom-color: #3ffa00;
+  border-left-color: #3ffa00;
+}
+
+a span {
+  font-family: 'Palatino Linotype',Palatino,Serif;
+  font-weight: bold;
+  text-decoration: line-through;
+}
+
+a img {
+  color: #f723de;
+  background-color: #bf00ff;
+  background-image: none;
+  border-top-style: groove;
+  border-right-style: groove;
+  border-bottom-style: groove;
+  border-left-style: groove;
+  border-top-color: #000000;
+  border-right-color: #000000;
+  border-bottom-color: #000000;
+  border-left-color: #000000;
+  border-top-width: 18px;
+  padding-bottom: 18px;
+}
+
+#header .section {
+  background-color: #d1b2d1;
+}
+
+#page #header {
+  background-color: #e8d0e8;
+}
+
+#page #main-wrapper {
+  background-color: #50de6c;
+  border-top-style: inset;
+  border-right-style: inset;
+  border-bottom-style: inset;
+  border-left-style: inset;
+}
+
