@@ -18,10 +18,9 @@ function greeting_menu() {
   return $items;
 }
 
- 
-function say_hello() {
-    return '<p>Hello my dear friend! </p>';
 
+function say_hello() {
+  return '<p>Hello my dear friend! </p>';
 }
 
 // This function says goodbye to the deer friend

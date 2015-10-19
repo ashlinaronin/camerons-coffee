@@ -3,11 +3,19 @@
 function favorites_menu() {
   $items = array();
   $items['favorite_movies'] = array(
-    'title' => 'my 3 fav movies',
+    'title' => 'My Favorite Movies',
     'page callback' => 'fav_movies',
     'access callback' => TRUE,
     'type' => MENU_NORMAL_ITEM,
   );
+
+  $items['favorite_books'] = array(
+    'title' => 'My Favorite Books',
+    'page callback' => 'fav_books',
+    'access callback' => TRUE,
+    'type' => MENU_NORMAL_ITEM,
+  );
+  
   return $items;
 }
 
@@ -16,5 +24,17 @@ function fav_movies() {
   <p> Movie 1: Pan</p>
   <p> Movie 1:  Peter Pan</p>
   <p> Movie 1:  Hook </p>
+  ";
+}
+
+function fav_books() {
+  return "
+  <ul>
+    <li>Fifty Shades of Grey</li>
+    <li>Fifty Shades Darker</li>
+    <li>Fifty Shades Freed</li>
+  </ul>
+
+  <a href='http://www.walmart.com/ip/20902378?wmlspartner=wlpa&adid=22222222227015074573&wl0=&wl1=g&wl2=c&wl3=53062321848&wl4=&wl5=pla&wl6=75157020648&veh=sem'>Purchase From Your Local Retailer!</a>
   ";
 }
