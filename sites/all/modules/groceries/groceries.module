@@ -16,29 +16,29 @@ function print_groceries() {
   $foods = array(
     'eggs' => array(
       'price' => 1.99,
-      'quantity' => '2 cartons'
+      'quantity' => 2
     ),
     'melk' => array(
       'price' => 3.49,
-      'quantity' => '1 melkbox'
+      'quantity' => 1
     ),
     'fish' => array(
       'price' => 1.99,
-      'quantity' => '1 can'
+      'quantity' => 3
     ),
     'meat' => array(
       'price' => 10.99,
-      'quantity' => '3 slabs'
+      'quantity' => 10
     )
   );
 
   $output = "<ul>";
 
-  foreach ($foods as $food_key => $food_value) {
-    $this_price = $foods[$food_key]['price'];
-    $this_quantity = $foods[$food_key]['quantity'];
-    $output .= "<li>$food_key - \$$this_price</li>
-    <li> $this_quantity </li>";
+  foreach ($foods as $food_name => $food_data) {
+    // Calculate total price of food by multiplying unit price x quantity
+    $this_total_price = $foods[$food_name]['price'] * $foods[$food_name]['quantity'];
+    $this_quantity = $foods[$food_name]['quantity'];
+    $output .= "<li>$this_quantity $food_name -> \$$this_total_price</li>";
   }
 
   return $output .= "</ul>";
