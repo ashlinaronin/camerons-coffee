@@ -1,0 +1,20 @@
+<?php
+
+function favorites_menu() {
+  $items = array();
+  $items['favorite_movies'] = array(
+    'title' => 'my 3 fav movies',
+    'page callback' => 'fav_movies',
+    'access callback' => TRUE,
+    'type' => MENU_NORMAL_ITEM,
+  );
+  return $items;
+}
+
+function fav_movies() {
+  return "
+  <p> Movie 1: Pan</p>
+  <p> Movie 1:  Peter Pan</p>
+  <p> Movie 1:  Hook </p>
+  ";
+}

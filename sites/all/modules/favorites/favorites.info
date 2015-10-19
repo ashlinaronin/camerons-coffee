@@ -1,0 +1,5 @@
+name = Favorites
+description =  list of 3 fav things
+package = My First Modules
+core = 7.x
+files [] = favorites.module
