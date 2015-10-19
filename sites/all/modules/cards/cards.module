@@ -28,20 +28,20 @@ function cards_menu() {
 function bday_card() {
   return "
   <ul>
-    <li> happy bdayyyyyy </li>
+    <li> happy bdayyyyyy simon</li>
   </ul>";
 }
 
 function nefew_card() {
   return "
   <ul>
-    <li>nefewwww  </li>
+    <li>nefewwww  sarah happy bar mitzvot mazel tob</li>
   </ul>";
 }
 
 function halloween_card() {
   return "
   <ul>
-    <li>halloweeennnnnn </li>
+    <li>happily halloweeennnnnn reginald enjoy this candy corn coupon!</li>
   </ul>";
 }
