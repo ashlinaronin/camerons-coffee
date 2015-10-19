@@ -1,0 +1,22 @@
+<?php
+
+function pet_menu() {
+  $items = array();
+  $items['favorite_pets'] = array(
+    'title' => "my fav pets",
+    'page callback' => 'fav_pet',
+    'access callback' => TRUE,
+    'type' => MENU_NORMAL_ITEM,
+  );
+  return $items;
+}
+
+
+function fav_pet() {
+  return "
+  <img src='sites/all/modules/pet/images/cat_eating_lettuce.jpg' alt='cat eating lettuce'>
+  <img src='sites/all/modules/pet/images/cat_with_flars.jpg' alt='cat receiving flars gift'>
+  <p> Here you can see my favorite pet, cat. </p>
+  <a href='http://worstcats.tumblr.com/'>Click here for more general cat information.</a>
+  ";
+}
