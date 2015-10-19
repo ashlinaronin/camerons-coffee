@@ -2,4 +2,4 @@ name = Favorites
 description =  These Are A Few Of My Favorite Things
 package = My First Modules
 core = 7.x
-files [] = favorites.module
+files[] = favorites.module
