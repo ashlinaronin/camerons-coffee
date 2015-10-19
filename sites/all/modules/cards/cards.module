@@ -1,0 +1,47 @@
+<?php
+
+function cards_menu() {
+  $items = array();
+  $items['bday'] = array(
+    'title' => 'happy bday',
+    'page callback' => 'bday_card',
+    'access callback' => TRUE,
+    'type' => MENU_NORMAL_ITEM,
+  );
+  $items['nefew barmitzfa'] = array(
+    'title' => 'happy bar nefew',
+    'page callback' => 'nefew_card',
+    'access callback' => TRUE,
+    'type' => MENU_NORMAL_ITEM,
+  );
+  $items['halloween'] = array(
+    'title' => 'happy halloween',
+    'page callback' => 'halloween_card',
+    'access callback' => TRUE,
+    'type' => MENU_NORMAL_ITEM,
+  );
+
+    return $items;
+}
+
+
+function bday_card() {
+  return "
+  <ul>
+    <li> happy bdayyyyyy </li>
+  </ul>";
+}
+
+function nefew_card() {
+  return "
+  <ul>
+    <li>nefewwww  </li>
+  </ul>";
+}
+
+function halloween_card() {
+  return "
+  <ul>
+    <li>halloweeennnnnn </li>
+  </ul>";
+}
