@@ -36,7 +36,9 @@ function print_groceries() {
 
   foreach ($foods as $food_key => $food_value) {
     $this_price = $foods[$food_key]['price'];
-    $output .= "<li>$food_key - \$$this_price</li>";
+    $this_quantity = $foods[$food_key]['quantity'];
+    $output .= "<li>$food_key - \$$this_price</li>
+    <li> $this_quantity </li>";
   }
 
   return $output .= "</ul>";
